@@ -9,3 +9,46 @@
 * jQPreloaders.style.css Copyright Fede91 2014.
 */
 
+/* Style */
+.jQP_container {
+	background-color: rgba(0,0,0,0);
+	position: relative;
+}
+
+    /* Angular */
+    .jQP_angular {
+   	    border: 2px solid rgba(0,183,229,0.9);
+   	    position: absolute;
+   	    width: 20px;
+        height:20px;
+    }
+   
+    .jQP_angular_l {
+        border-top:   2px solid rgba(0,0,0,0);
+        border-right: 2px solid rgba(0,0,0,0);
+        top: 30px;
+        left: 0px;
+    }
+    
+    .jQP_angular_r {
+    	border-bottom: 2px solid rgba(0,0,0,0);
+        border-left: 2px solid rgba(0,0,0,0);
+        position:absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+.stop {
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:   paused;
+}
+/* Animations */
+@-moz-keyframes jQP_an_rot_01 {
+    0% {
+        -moz-transform: rotate(45deg);
+    }
+
+    100% {
+        -moz-transform: rotate(405deg);
+    };
+} /* jQP_an_rot_01 */

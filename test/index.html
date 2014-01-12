@@ -3,6 +3,7 @@
 	<head>
 		<title>JQPreloaders - Test</title>
 		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
 		<link type="text/css" rel="stylesheet" href="../css/jQPreloaders.style.css"/>
 		<!-- jQuery -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -11,12 +12,47 @@
 		<script type="text/javascript">
 			$(window).load(function() {
 				$('#preloader01').jQPreloaders('angular_01');
+				$('#preloader02').jQPreloaders('angular_02');
 			});
 		</script>
 	</head>
 	<body>
-		<div id="wrapper" style="padding-left: 100px; padding-top: 100px;">
-			<div id="preloader01"></div>
+		<div class="container">
+			<h1>JQPreloaders</h1>
+			<!-- ANGULAR_01 -->
+			<div class="content">
+				<div class="animation_wrapper">
+					<div id="preloader01"></div>
+				</div>
+				<div class="info_wrapper">
+					<h3>Angular_01</h3>
+					<h5>HTML:</h5>
+					<div>
+						<code>&lt;div id="preloader" &gt;&lt;/div&gt;</code>
+					</div>
+					<h5>JS:</h5>
+					<div>
+						<code>$('#preloader').jQPreloaders('angular_01');</code>
+					</div>
+				</div>
+			</div>
+			<!-- ANGULAR_02 -->
+			<div class="content">
+				<div class="animation_wrapper">
+					<div id="preloader02"></div>
+				</div>
+				<div class="info_wrapper">
+					<h3>Angular_02</h3>
+					<h5>HTML:</h5>
+					<div>
+						<code>&lt;div id="preloader" &gt;&lt;/div&gt;</code>
+					</div>
+					<h5>JS:</h5>
+					<div>
+						<code>$('#preloader').jQPreloaders('angular_02');</code>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

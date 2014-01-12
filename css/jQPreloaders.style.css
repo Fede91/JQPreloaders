@@ -42,8 +42,9 @@
 	-webkit-animation-play-state:paused;
 	-moz-animation-play-state:   paused;
 }
+
 /* Animations */
-@-moz-keyframes jQP_an_rot_01 {
+@-moz-keyframes jQP_an_rot_01_p {
     0% {
         -moz-transform: rotate(45deg);
     }
@@ -51,4 +52,34 @@
     100% {
         -moz-transform: rotate(405deg);
     };
-} /* jQP_an_rot_01 */
+} /* jQP_an_rot_01_p */
+
+@-webkit-keyframes jQP_an_rot_01_p {
+    0% {
+        -moz-transform: rotate(45deg);
+    }
+
+    100% {
+        -moz-transform: rotate(405deg);
+    };
+} /* jQP_an_rot_01_p */
+
+@-moz-keyframes jQP_an_rot_01_n {
+    0% {
+        -moz-transform: rotate(-45deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-405deg);
+    };
+} /* jQP_an_rot_01_n */
+
+@-webkit-keyframes jQP_an_rot_01_n {
+    0% {
+        -moz-transform: rotate(-45deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-405deg);
+    };
+} /* jQP_an_rot_01_n */

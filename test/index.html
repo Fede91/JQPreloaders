@@ -11,8 +11,13 @@
 		<script tyle="text/javascript" src="../js/jQPreloaders.js"></script>
 		<script type="text/javascript">
 			$(window).load(function() {
+			    jQuery.fx.interval = 100;
 				$('#preloader01').jQPreloaders('angular_01');
 				$('#preloader02').jQPreloaders('angular_02');
+				
+				$('#preloaderS01').jQPreloaders('square_01', {dimension: 10});
+				$('#preloaderS02').jQPreloaders('square_02', {dimension: 10});
+				$('#preloaderS03').jQPreloaders('square_03', {dimension: 25});
 			});
 		</script>
 	</head>
@@ -53,6 +58,61 @@
 					</div>
 				</div>
 			</div>
+			
+			<!-- SQUARE_01 -->
+			<div class="content">
+				<div class="animation_wrapper">
+					<div id="preloaderS01"></div>
+				</div>
+				<div class="info_wrapper">
+					<h3>Square_01</h3>
+					<h5>HTML:</h5>
+					<div>
+						<code>&lt;div id="preloader" &gt;&lt;/div&gt;</code>
+					</div>
+					<h5>JS:</h5>
+					<div>
+						<code>$('#preloader').jQPreloaders('square_01');</code>
+					</div>
+				</div>
+			</div>
+			
+			<!-- SQUARE_02 -->
+			<div class="content">
+				<div class="animation_wrapper">
+					<div id="preloaderS02"></div>
+				</div>
+				<div class="info_wrapper">
+					<h3>Square_02</h3>
+					<h5>HTML:</h5>
+					<div>
+						<code>&lt;div id="preloader" &gt;&lt;/div&gt;</code>
+					</div>
+					<h5>JS:</h5>
+					<div>
+						<code>$('#preloader').jQPreloaders('square_02');</code>
+					</div>
+				</div>
+			</div>
+			
+			<!-- SQUARE_03 -->
+			<div class="content">
+				<div class="animation_wrapper">
+					<div id="preloaderS03"></div>
+				</div>
+				<div class="info_wrapper">
+					<h3>Square_03</h3>
+					<h5>HTML:</h5>
+					<div>
+						<code>&lt;div id="preloader" &gt;&lt;/div&gt;</code>
+					</div>
+					<h5>JS:</h5>
+					<div>
+						<code>$('#preloader').jQPreloaders('square_03');</code>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</body>
 </html>

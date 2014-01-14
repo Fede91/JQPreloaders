@@ -183,3 +183,152 @@
 			background-color: #2187e7;
 		};
 	} /* jQP_sqr_03 */
+	
+	/* jQP_sqr_04 */
+		/* TOP-LEFT */
+		@-moz-keyframes jQP_sqr_04_0 {
+			0% {
+				opacity: .9;
+			}
+			25%{
+				top : 30px;
+				left: 30px;
+			}
+			75%{
+				top : 30px;
+				left: 30px;
+			}
+			100% {
+				top : 0px;
+				left: 0xp;
+			};
+		} /* jQP_sqr_04_0 */
+		
+		@-webkit-keyframes jQP_sqr_04_0 {
+			0% {
+				opacity: .9;
+			}
+			25%{
+				top : 30px;
+				left: 30px;
+			}
+			75%{
+				top : 30px;
+				left: 30px;
+			}
+			100% {
+				top : 0px;
+				left: 0xp;
+			};
+		} /* jQP_sqr_04_0 */
+		
+		/* TOP-RIGHT */
+		@-moz-keyframes jQP_sqr_04_1 {
+			0% {
+				opacity: .9;
+			}
+			25%{
+				top : 30px;
+				left: 0px;
+			}
+			75%{
+				top : 30px;
+				left: 0px;
+			}
+			100% {
+				top : 0px;
+				left: 30xp;
+			};
+		} /* jQP_sqr_04_1 */
+		
+		@-webkit-keyframes jQP_sqr_04_1 {
+			0% {
+				opacity: .9;
+			}
+			25%{
+				top : 30px;
+				left: 0px;
+			}
+			75%{
+				top : 30px;
+				left: 0px;
+			}
+			100% {
+				top : 0px;
+				left: 30xp;
+			};
+		} /* jQP_sqr_04_1 */
+		
+		/* BOTTOM-LEFT */
+		@-moz-keyframes jQP_sqr_04_2 {
+			0% {
+				opacity: .9;
+			}
+			25%{
+				top : 0px;
+				left: 30px;
+			}
+			75%{
+				top : 0px;
+				left: 30px;
+			}
+			100% {
+				top : 30px;
+				left: 0xp;
+			};
+		} /* jQP_sqr_04_2 */
+		
+		@-webkit-keyframes jQP_sqr_04_2 {
+			0% {
+				opacity: .9;
+			}
+			25%{
+				top : 0px;
+				left: 30px;
+			}
+			75%{
+				top : 0px;
+				left: 30px;
+			}
+			100% {
+				top : 30px;
+				left: 0xp;
+			};
+		} /* jQP_sqr_04_2 */
+		
+		/* BOTTOM-RIGHT */
+		@-moz-keyframes jQP_sqr_04_3 {
+			0% {
+				opacity: .9;
+			}
+			25%{
+				top : 0px;
+				left: 0px;
+			}
+			75%{
+				top : 0px;
+				left: 0px;
+			}
+			100% {
+				top : 30px;
+				left: 30xp;
+			};
+		} /* jQP_sqr_04_3 */
+		
+		@-webkit-keyframes jQP_sqr_04_3 {
+			0% {
+				opacity: .9;
+			}
+			25%{
+				top : 0px;
+				left: 0px;
+			}
+			75%{
+				top : 0px;
+				left: 0px;
+			}
+			100% {
+				top : 30px;
+				left: 30xp;
+			};
+		} /* jQP_sqr_04_3 */

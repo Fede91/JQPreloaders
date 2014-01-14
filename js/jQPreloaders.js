@@ -16,6 +16,7 @@
 	var PRL_SQUARE_01 = 'square_01';
 	var PRL_SQUARE_02 = 'square_02';
 	var PRL_SQUARE_03 = 'square_03';
+	var PRL_SQUARE_04 = 'square_04';
 	
 	var __angular_01 = function(obj, settings){
 		obj.addClass('jQP_container')
@@ -118,17 +119,58 @@
 		
 	} // __square_03
 	
+	var __square_04 = function(obj, settings){
+	    var _num_el = 4;
+		var _time = 2;
+		var _delay = .5;
+		var _row = 0;
+		var _col = 0;
+		
+		obj.append("<div id='jQP_sqr_container'></div>");
+		obj.children('#jQP_sqr_container').css('position', 'relative');
+		
+		for (var i=0; i<_num_el; i++) {
+		    obj.children('#jQP_sqr_container').append("<div id='jQP_sqr_" + i + "' class='jQP_square'></div>");
+			obj.children('#jQP_sqr_container').children('#jQP_sqr_'+i).css('width', settings.dimension)
+																	  .css('height', settings.dimension)
+																	  .css('background-color', settings.colors[i])
+																	  .css('position', 'absolute')
+																	  .css('top', (settings.dimension+5)*_row +'px')
+																	  .css('left', (settings.dimension+5)*_col +'px')
+																	  .css('-moz-animation', 'jQP_sqr_04_'+i +' ' + _time + 's infinite linear')
+																	  .css('-webkit-animation', 'jQP_sqr_03 ' + _time + 's infinite linear');
+			if (i%2 > 0){
+			    _row = _row+1;
+				_col = 0;
+			}else{
+			    _col = _col +1;
+			}
+			
+			if (i == 1 || i == 2){
+			    obj.children('#jQP_sqr_container').children('#jQP_sqr_'+i).css('-moz-animation-delay', _delay+'s')
+																	      .css('-webkit-animation-delay', _delay+'s');
+			}
+		}
+	} // __square_04
+	
 	/**
      * Plugin - jQuery extension
 	 */
 	$.fn.jQPreloaders = function(type, options) {
 	    
 	    var defaults = {
-	    	            dimension: 50
+	    	            dimension: 50,
+						colors: [ '#4B4BDB',
+								  '#FFA600',
+								  '#E00202',
+								  '#02C202'
+								]
 	    			  };
 	    
 	    var settings = $.extend(defaults, options);
 	    
+		//console.log(settings.colors.length);
+		
 		switch (type) {
 			case PRL_ANGULAR_01:
 				__angular_01($(this), settings);
@@ -144,6 +186,9 @@
 				break;
 			case PRL_SQUARE_03:
 			    __square_03($(this), settings);
+				break;
+			case PRL_SQUARE_04:
+			    __square_04($(this), settings);
 				break;
 		}// switch-case
 		

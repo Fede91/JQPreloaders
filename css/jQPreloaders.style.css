@@ -22,7 +22,7 @@
    	    width: 20px;
         height:20px;
     }
-   
+	
     .jQP_angular_l {
         border-top:   2px solid rgba(0,0,0,0);
         border-right: 2px solid rgba(0,0,0,0);
@@ -37,6 +37,16 @@
         top: 0px;
         right: 0px;
     }
+	
+	.jQP_angular_rot_p {
+	    -moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+	
+	.jQP_angular_rot_n {
+	    -moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
 	
 	/* Square */
 	.jQP_square {
@@ -92,7 +102,75 @@
 			-moz-transform: rotate(-405deg);
 		};
 	} /* jQP_an_rot_01_n */
-
+	
+	@-moz-keyframes jQP_an_border_color_l {
+	    0%{
+			opacity: .3;
+		    border-bottom-color: #00B7E5;
+			border-left-color: #00B7E5;
+		}
+		40% {
+			opacity: .9;
+		    border-bottom-color:#B0DDE8;
+			border-left-color: #B0DDE8;
+		}
+		80%{
+		    border-bottom-color: #00B7E5;
+			border-left-color: #00B7E5;
+		}
+	} /* jQP_an_border_color_l */
+	
+	@-webkit-keyframes jQP_an_border_color_l {
+	    0%{
+		    opacity: .3;
+		    border-bottom-color: #00B7E5;
+			border-left-color: #00B7E5;
+		}
+		40% {
+		    opacity: .9;
+		    border-bottom-color:#B0DDE8;
+			border-left-color: #B0DDE8;
+		}
+		80%{
+		    border-bottom-color: #00B7E5;
+			border-left-color: #00B7E5;
+		}
+	} /* jQP_an_border_color_l */
+	
+	@-moz-keyframes jQP_an_border_color_r {
+	    0%{
+		    opacity: .3;
+		    border-top-color: #00B7E5;
+			border-right-color: #00B7E5;
+		}
+		40% {
+		    opacity: .9;
+		    border-top-color:#B0DDE8;
+			border-right-color: #B0DDE8;
+		}
+		80%{
+		    border-top-color: #00B7E5;
+			border-right-color: #00B7E5;
+		}
+	} /* jQP_an_border_color_r */
+	
+	@-webkit-keyframes jQP_an_border_color_r {
+	    0%{
+		    opacity: .3;
+		    border-top-color: #00B7E5;
+			border-right-color: #00B7E5;
+		}
+		40% {
+		    opacity: .9;
+		    border-top-color:#B0DDE8;
+			border-right-color: #B0DDE8;
+		}
+		80%{
+		    border-top-color: #00B7E5;
+			border-right-color: #00B7E5;
+		}
+	} /* jQP_an_border_color_r */
+	
 /* Square */
     @-moz-keyframes jQP_sqr_01 {
 	    0% {

@@ -12,6 +12,7 @@
 	
 	var PRL_ANGULAR_01 = 'angular_01';
 	var PRL_ANGULAR_02 = 'angular_02';
+	var PRL_ANGULAR_03 = 'angular_03';
 	
 	var PRL_SQUARE_01 = 'square_01';
 	var PRL_SQUARE_02 = 'square_02';
@@ -59,6 +60,45 @@
 		
 		obj.children('#jQP_int').children('#jQP_int_container').children('.jQP_angular_l').css('top', settings.dimension*0.5 - 20*0.5);
 	} // __angular_02
+	
+	var __angular_03 = function(obj, settings){
+	    var _speed_anim = 1;
+		var _delay = 0.2;
+		var _num_el = 6;
+		var _border_size = 5;
+		
+	    obj.addClass('jQP_container');
+		
+		for (var i=0; i<_num_el; i++){
+		    obj.append("<div id='jQP_ang_" + i + "'></div>");
+			obj.children('#jQP_ang_'+i).css('width', settings.dimension)
+									   .css('height', settings.dimension)
+									   .css('position', 'absolute')
+									   .css('border', _border_size+'px solid rgba(0,183,229,0.9)')
+									   .css('top', 0 +'px')
+									   .css('left', (settings.dimension+5)*i +'px')
+									   .css('opacity', '.3');
+			if(i<_num_el/2){
+			     // angle left
+				 obj.children('#jQP_ang_'+i).css('border-top', _border_size+'px solid rgba(0,0,0,0)')
+											.css('border-right', _border_size+'px solid rgba(0,0,0,0)')
+											.css('-moz-animation', 'jQP_an_border_color_l '+_speed_anim+'s infinite linear')
+											.css('-webkit-animation', 'jQP_an_border_color_l '+_speed_anim+'s infinite linear')
+											.css('-moz-animation-delay', _delay+(_delay*(_num_el/2-i-1))+'s')
+											.css('-webkit-animation-delay', _delay+(_delay*(_num_el/2-i-1))+'s')
+											.addClass('jQP_angular_rot_n');
+			}else{
+			    // angle right
+				obj.children('#jQP_ang_'+i).css('border-bottom', _border_size+'px solid rgba(0,0,0,0)')
+										   .css('border-left', _border_size+'px solid rgba(0,0,0,0)')
+										   .css('-moz-animation', 'jQP_an_border_color_r '+_speed_anim+'s infinite linear')
+										   .css('-webkit-animation', 'jQP_an_border_color_r '+_speed_anim+'s infinite linear')
+										   .css('-moz-animation-delay', _delay*(i+1-_num_el/2)+'s')
+										   .css('-webkit-animation-delay',  _delay*(i+1-_num_el/2)+'s')
+										   .addClass('jQP_angular_rot_p');
+			}
+		}
+	} // __angular_03
 	
 	var __square_01 = function(obj, settings) {
 	    var _num_el = 6;
@@ -178,7 +218,10 @@
 			case PRL_ANGULAR_02:
 				__angular_02($(this), settings);
 			    break;
-		    case PRL_SQUARE_01:
+		    case PRL_ANGULAR_03:
+				__angular_03($(this), settings);
+			    break;
+			case PRL_SQUARE_01:
 			    __square_01($(this), settings);
 				break;
 			case PRL_SQUARE_02:

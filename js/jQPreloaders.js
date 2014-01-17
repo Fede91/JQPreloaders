@@ -238,4 +238,8 @@
 		return this;
 	}; // EndOf: "jQPreloaders()"
 	
+	$.fn.jQPreloaders_pause = function() {
+	    $(this).find('*').toggleClass('stop');
+	};
+	
 }( jQuery ));

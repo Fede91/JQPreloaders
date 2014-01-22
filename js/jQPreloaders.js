@@ -18,6 +18,7 @@
 	var PRL_SQUARE_02 = 'square_02';
 	var PRL_SQUARE_03 = 'square_03';
 	var PRL_SQUARE_04 = 'square_04';
+	var PRL_SQUARE_05 = 'square_05';
 	
 	var __angular_01 = function(obj, settings){
 		obj.addClass('jQP_container')
@@ -193,6 +194,30 @@
 		}
 	} // __square_04
 	
+	var __square_05 = function(obj, settings){
+	    var _num_el = 9;
+		var _time = 2;
+		var _idcontainer;
+		
+		for (var i=0; i<_num_el; i++) {
+		    _delay = _time/_num_el * i;
+		    if ( i%Math.sqrt(_num_el) == 0){
+			    _idcontainer = i;
+				
+				obj.append("<div id='jQP_sqr_container_" + _idcontainer +"'></div>");
+				obj.children('#jQP_sqr_container_'+_idcontainer).css('padding-top', settings.dimension+5 +'px');
+			}
+			
+		    obj.children('#jQP_sqr_container_'+_idcontainer).append("<div id='jQP_sqr_" + i + "' class='jQP_square'></div>");
+			obj.children('#jQP_sqr_container_'+_idcontainer).children('#jQP_sqr_'+i).css('width', settings.dimension)
+			 														                .css('height', settings.dimension)
+																					.css('-moz-animation', 'jQP_sqr_05 ' + _time + 's infinite linear')
+																					.css('-webkit-animation', 'jQP_sqr_05 ' + _time + 's infinite linear')
+																					.css('-moz-animation-delay', Math.random()+'s')
+																					.css('-webkit-animation-delay', Math.random()+'s');
+		}
+	} // __square_05
+	
 	/**
      * Plugin - jQuery extension
 	 */
@@ -232,6 +257,9 @@
 				break;
 			case PRL_SQUARE_04:
 			    __square_04($(this), settings);
+				break;
+			case PRL_SQUARE_05:
+			    __square_05($(this), settings);
 				break;
 		}// switch-case
 		

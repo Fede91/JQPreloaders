@@ -410,3 +410,36 @@
 				left: 30xp;
 			};
 		} /* jQP_sqr_04_3 */
+	
+	/* jQP_sqr_05 */
+	@-moz-keyframes jQP_sqr_05 {
+	    0% {
+		    opacity: .9;
+		    background-color: #1B64A8;
+			box-shadow: 0 0 5px #2C8DE8;
+		}
+		40% {
+			opacity: .6;
+			background-color:  #2C8DE8;
+		}
+		70% {
+			opacity: .1;
+		    background-color: #2187e7;
+		};
+	} /* jQP_sqr_05 */
+	
+	@-webkit-keyframes jQP_sqr_05 {
+	    0% {
+		    opacity: .9;
+		    background-color: #1B64A8;
+			box-shadow: 0 0 5px #2C8DE8;
+		}
+		40% {
+			opacity: .6;
+			background-color:  #2C8DE8;
+		}
+		70% {
+		    opacity: .1;
+		    background-color: #2187e7;
+		};
+	} /* jQP_sqr_05 */

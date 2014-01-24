@@ -1,0 +1,84 @@
+/*
+* styl_page.css
+* Author: Fede91
+* Github: https://github.com/Fede91
+*
+* Made available under a MIT License:
+* http://www.opensource.org/licenses/mit-license.php
+*
+* styl_page.css Copyright Fede91 2014.
+*/
+body {
+	background: #161616;
+	margin-top: 100px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 23px;
+	color: #FFF;
+}
+
+h1 {
+	color: #FFF;
+	font-size: 60px;
+	text-align: center;
+	font-family: 'Lustria', serif;
+	font-weight: normal;
+}
+
+h2 {
+    border-bottom: 1px dashed #444;
+}
+
+h3 {
+	color: #FFF;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Lustria', serif;
+	font-weight: normal;
+}
+
+a {
+	color: #C7C7C7;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+header {
+	text-align: center;
+	border-bottom: 2px dashed #444;
+	margin-bottom: 50px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+footer {
+	border-top: 2px dashed #444;
+	font-size: 11px;
+	text-align: center;
+}
+
+.container {
+    width: 800px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.left {
+    float: left;
+	margin: 0px auto;
+}
+
+.right {
+    float: right;
+	width: 500px;
+}
+
+.exmpl_container{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+    <head>
+	    <title>jQPreloaders - jQuery plugin to create preloaders</title>
+		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/styl_page.css"/>
+		<link type="text/css" rel="stylesheet" href="https://rawgithub.com/Fede91/JQPreloaders/master/css/jQPreloaders.style.css"/>
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- jQPreloaders -->
+		<script tyle="text/javascript" src="https://rawgithub.com/Fede91/JQPreloaders/master/js/jQPreloaders.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+			    jQuery.fx.interval = 100;
+				$('#preloader01').jQPreloaders('angular_01');
+				$('#preloader02').jQPreloaders('angular_02');
+				$('#preloader03').jQPreloaders('angular_03', {dimension: 15});
+				
+				$('#preloaderS01').jQPreloaders('square_01', {dimension: 10});
+				$('#preloaderS02').jQPreloaders('square_02', {dimension: 10});
+				$('#preloaderS03').jQPreloaders('square_03', {dimension: 25});
+				$('#preloaderS04').jQPreloaders('square_04', {dimension: 25});
+				$('#preloaderS05').jQPreloaders('square_05', {dimension: 15});
+			});
+		</script>
+	</head>
+	<body>
+	    <div class='container'>
+		    <header>
+			    <h1>jQPreloaders</h1>
+				<h3>A jQuery plugin to create preloaders</h3>
+			</header>
+			<section>
+			    <p>JQPreloaders is a collection of preloaders for any web content and is powered by jQuery and CSS. Refer to the Test folder for the list of usable preloaders.</p>
+			</section>
+			<section>
+			    <h2>How it works</h2>
+				<article>
+				    <h4>&rsaquo; Requirements</h4>
+					<p>You need jQuery to run JQPreloaders. Add this code to your web page:</p>
+					<pre>&lt;script type=&#34;text/javascript&#34; src=&#34;http://code.jquery.com/jquery-latest.min.js&#34;&gt;</script></pre>
+				</article>
+				<article>
+				    <h4>&rsaquo; HTML</h4>
+					<p>To add a preloader to your page, add the following HTML code after the &#39;&lt;body&gt;&#39; tag:</p>
+					<pre>&lt;div id=&#34;jQPreloader&#34;&gt;&lt;/div&gt;</pre>
+				</article>
+				<article>
+				    <h4>&rsaquo; Javascript</h4>
+					<p>To start a preloader, add the following Javascript code inside the &#39;&lt;script&gt;&#39; tag:</p>
+					<pre>
+$(window).load(function() {
+    $('#jQPreloader').jQPreloaders(type, settings);
+}</pre>
+				</article>
+				<article>
+				    <h4>&rsaquo; [WIP] Options</h4>
+					<p>The settings you can change are:</p>
+					<pre>
+{
+    dimension: 10 // default 50
+}</pre>
+				</article>
+			</section>
+			<section>
+			    <h2>Examples</h2>
+				<!-- Angular_01 -->
+				<div class="exmpl_container">
+					<p>Angular_01</p>
+					<section class="left">
+					     <div id="preloader01"></div>
+					</section>
+					<section class="right">
+					     <span>HTML</span>
+						 <pre>&lt;div id="preloader" &gt;&lt;/div&gt;</pre>
+						 <span>JS</span>
+						 <pre>$('#preloader').jQPreloaders('angular_01');</pre>
+					</section>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<!-- Angular_02 -->
+				<div class="exmpl_container">
+					<p>Angular_02</p>
+					<section class="left">
+					     <div id="preloader02"></div>
+					</section>
+					<section class="right">
+					     <span>HTML</span>
+						 <pre>&lt;div id="preloader" &gt;&lt;/div&gt;</pre>
+						 <span>JS</span>
+						 <pre>$('#preloader').jQPreloaders('angular_02');</pre>
+					</section>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<!-- Angular_03 -->
+				<div class="exmpl_container">
+					<p>Angular_03</p>
+					<section class="left">
+					     <div id="preloader03"></div>
+					</section>
+					<section class="right">
+					     <span>HTML</span>
+						 <pre>&lt;div id="preloader" &gt;&lt;/div&gt;</pre>
+						 <span>JS</span>
+						 <pre>$('#preloader').jQPreloaders('angular_03', {dimension: 15});</pre>
+					</section>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<!-- Square_01 -->
+				<div class="exmpl_container">
+					<p>Square_01</p>
+					<section class="left">
+					     <div id="preloaderS01"></div>
+					</section>
+					<section class="right">
+					     <span>HTML</span>
+						 <pre>&lt;div id="preloader" &gt;&lt;/div&gt;</pre>
+						 <span>JS</span>
+						 <pre>$('#preloader').jQPreloaders('square_01', {dimension: 10});</pre>
+					</section>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<!-- Square_02 -->
+				<div class="exmpl_container">
+					<p>Square_02</p>
+					<section class="left">
+					     <div id="preloaderS02"></div>
+					</section>
+					<section class="right">
+					     <span>HTML</span>
+						 <pre>&lt;div id="preloader" &gt;&lt;/div&gt;</pre>
+						 <span>JS</span>
+						 <pre>$('#preloader').jQPreloaders('square_02', {dimension: 10});</pre>
+					</section>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<!-- Square_03 -->
+				<div class="exmpl_container">
+					<p>Square_03</p>
+					<section class="left">
+					     <div id="preloaderS03"></div>
+					</section>
+					<section class="right">
+					     <span>HTML</span>
+						 <pre>&lt;div id="preloader" &gt;&lt;/div&gt;</pre>
+						 <span>JS</span>
+						 <pre>$('#preloader').jQPreloaders('square_03', {dimension: 25});</pre>
+					</section>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<!-- Square_04 -->
+				<div class="exmpl_container">
+					<p>Square_04</p>
+					<section class="left">
+					     <div id="preloaderS04"></div>
+					</section>
+					<section class="right">
+					     <span>HTML</span>
+						 <pre>&lt;div id="preloader" &gt;&lt;/div&gt;</pre>
+						 <span>JS</span>
+						 <pre>$('#preloader').jQPreloaders('square_04', {dimension: 25});</pre>
+					</section>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<!-- Square_04 -->
+				<div class="exmpl_container">
+					<p>Square_05</p>
+					<section class="left">
+					     <div id="preloaderS05"></div>
+					</section>
+					<section class="right">
+					     <span>HTML</span>
+						 <pre>&lt;div id="preloader" &gt;&lt;/div&gt;</pre>
+						 <span>JS</span>
+						 <pre>$('#preloader').jQPreloaders('square_05', {dimension: 10});</pre>
+					</section>
+					<div style="clear:both;"></div>
+				</div>
+				
+			</section>
+			<footer>
+			    <p>Developed by Fede91 | Released under the MIT license | Follow me on <a href='http://github.com/Fede91'>Github</a></p>
+			</footer>
+		</div>
+	</body>
+</html>
